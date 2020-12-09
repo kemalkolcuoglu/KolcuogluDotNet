@@ -1,0 +1,114 @@
+[
+  {
+    "Title": "Kolcuoglu.Net Artık Özgür!",
+    "Topic": "Özgür Yazılım",
+    "SEODescription": "Özgür Yazılım, Açık kaynak kodlu yazılım",
+    "Description": "Açık kaynak ve Özgür Yazılım Gücü Adına...",
+    "Slug": "kolcuoglu-net-artik-ozgur-8",
+    "Date": "2020-12-9T04:30:00",
+    "File": "kolcuoglu-net-artik-ozgur",
+    "CoverImage": "undraw_online_wishes_dlmr.png",
+    "Tags": [
+      "ozguryazilim"
+    ]
+  },
+  {
+    "Title": "[Öğretici] Elasticsearch Veri Yedekleme Yöntemleri - Snapshot",
+    "Topic": "DevOps",
+    "SEODescription": "Elasticsearch, Kibana, DevOps",
+    "Description": "Snaphshot Elasticsearch'ün Basic Plan ile birlikte gelen özelliklerinden birisidir. (Kullanımı Ücretsizdir)\n\nSnapshot'ları Kibana UI, Elasticsearch SLM API ya da kendi geliştirdiğimiz scriptler ile oluşturabiliriz. Bu makalede Kibana UI kullanarak nasıl Snapshot ile yedekleme sürecini nasıl başlatabileceğimizden bahsedeceğim.",
+    "Slug": "elasticsearch-veri-yedekleme-yontemleri-snapshot-7",
+    "Date": "2020-11-19T00:15:00",
+    "File": "elasticsearch-snapshot",
+    "CoverImage": "snapshot_lifecycle.png",
+    "Tags": [
+      "elasticsearch",
+      "devops"
+    ]
+  },
+  {
+    "Title": "Python RotatingFileHandler Kullanımı",
+    "Topic": "Yazılım Mühendisliği",
+    "SEODescription": "Python, 'Yazilim Gelistirme', Logging",
+    "Description": "Bu yazımla birlikte logging handlerlarından birisi olan RotatingFileHandler'ı nasıl kullanabileceğimiz üzerine konuşacağız.",
+    "Slug": "python-rotatingfilehandler-kullanimi-6",
+    "Date": "2020-10-07T23:45:00",
+    "File": "python-rotatingfilehandler-kullanimi",
+    "CoverImage": "undraw_heavy_box_agqi.png",
+    "Tags": [
+      "python",
+      "yazilimmuhendisligi"
+    ]
+  },
+  {
+    "Title": "Python ile Log Kayıtları Oluşturma",
+    "Topic": "Yazılım Mühendisliği",
+    "SEODescription": "Python, 'Yazilim Gelistirme', Logging",
+    "Description": "Hata ayıklamak her zaman çok kolay olmayabiliyor. Her programlama dili için hata ayıklama araçları mevcut olsa bile günün birinde canlı sunucu üzerinde bu işlemi gerçekleşmeniz gerekebiliyor. Peki böyle bir durumda koddaki her yere `print` yazarak mı sorunları çözeceğiz? Elbette bu işin en iyi yolu log kayıtları oluşturma.Bu yazımda sizlerle python ile nasıl log kayıtları oluşturabileceğimiz ve log kayıtlarını nasıl yönetebileceğimizi inceleyeceğiz.",
+    "Slug": "python-ile-log-kayitlari-olusturma-5",
+    "Date": "2020-10-03T00:20:00",
+    "File": "python-ile-log-kayitlari-olusturma",
+    "CoverImage": "undraw_logistics_x4dc.png",
+    "Tags": [
+      "python",
+      "yazilimmuhendisligi"
+    ]
+  },
+  {
+    "Title": "PHP'den Python'a Geçiş Bölüm-0",
+    "Topic": "Yazılım Mühendisliği",
+    "SEODescription": "PHP, Python, 'Yazilim Gelistirme'",
+    "Description": "İşyerinde aldığım iş üzerine eski bir PHP scriptini Python scriptine dönüştürmek üzerine kollarımı sıvadım. Tam bu esnada olanlar oldu :) Yaşadığım zorlukları ve diller arası geçişteki farklılıkları özet halinde bu yazı dizisinde sizlerle paylaşacağım.",
+    "Slug": "phpden-pythona-gecis-bolum-0-4",
+    "Date": "2020-08-31T00:00:00",
+    "File": "phpden-pythona-gecis-bolum-0",
+    "CoverImage": "undraw_programmer_imem.png",
+    "Tags": [
+      "php",
+      "python",
+      "yazilimmuhendisligi"
+    ]
+  },
+  {
+    "Title": "Windows'da Linux Komutları Çalıştırmak",
+    "Topic": "Linux",
+    "SEODescription": "Windows, Linux, \"Windows'da Linux Komutları Çalıştırmak",
+    "Description": "Kendimi Windows platformundan soyutlamış ve Linux dünyasına daha fazla adapte etmiş bir durumdayım. Bu yüzden işyerinde kullandığım Windows makine içerisinde Linux kullanabilmenin yollarını araştırdım. Eriştiğim çözümleri sizler için derliyorum.",
+    "Slug": "windowsda-linux-komutlari-calistirmak-3",
+    "Date": "2020-05-03T00:00:00",
+    "File": "windowsda-linux-komutlari-calistirmak",
+    "CoverImage": "terminal.png",
+    "Tags": [
+      "linux",
+      "devops"
+    ]
+  },
+  {
+    "Title": "Yazılım Projesi Geliştirmeye Başlayacaklara Tavsiyeler",
+    "Topic": "Yazılım Mühendisliği",
+    "SEODescription": "Yazılım, Geliştirme, \"Yazılım Geliştirme \", \"Yazılım Projesi\", Proje",
+    "Description": "Belki ilk kez bir yazılım geliştirmek üzere bir teklif almışsınızdır, ancak ne yapmanız gerektiğini ve nasıl başlayacağınızı bilmiyorsanız bu yazım tamamen sizler için. ",
+    "Slug": "yazilim-projesi-gelistirmeye-baslayacaklara-tavsiyeler-2",
+    "Date": "2020-05-03T00:00:00",
+    "File": "yazilim_projesi_gelistirmeye_baslayacaklara_tavsiyeler",
+    "CoverImage": "undraw_career_development_oqcb.png",
+    "Tags": [
+      "yazilimmuhendisligi"
+    ]
+  },
+  {
+    "Title": "Ubuntu 20.04 Yayınlandı",
+    "Topic": "Linux",
+    "SEODescription": "GNU, Linux, Ubuntu, DevOps",
+    "Description": "Ubuntu Debian altyapısı kullanan ve 2004 yılından beri geliştirilen bir GNU/Linux işletim sistemidir. Teknik bilgisi olsun, olmasın herkesin gönül rahatlıyla kullanabileceği bir linux dağıtımı olan Ubuntu'nun her dört yılda bir LTS(Long Term Support - Uzun Dönem Destek) sürümü 23 Nisan tarihinde yayınlandı.",
+    "Slug": "ubuntu-20-04-yayinlandi-1",
+    "Date": "2020-04-30T00:00:00",
+    "File": "ubuntu-20-04-yayinlandi",
+    "CoverImage": "ubuntu_20_04_yayinlandi.png",
+    "Tags": [
+      "linux",
+      "devops",
+      "ubuntu"
+    ]
+  }
+]

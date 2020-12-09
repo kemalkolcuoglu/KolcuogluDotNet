@@ -1,0 +1,54 @@
+@{
+  ViewData["Title"] = "Byte Calculator";
+  ViewData["Desc"] = "Byte to MB, MB to GB, GB to TB, Byte Calculator";
+}
+
+<section class="pt-page pt-page-5">
+  <div class="border-block-top-110"></div>
+  <div class="section-inner">
+    <div class="section-title-block">
+      <div class="section-title-wrapper">
+        <h1 class="section-title">Byte Calculator</h1>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-12 subpage-block">
+      <div class="row">
+        <div class="col-md-12" style="margin-top: 40px;">
+          <label style="color:#d60b0b;font-size: 16px;line-height: 80px;font-weight: 300;font-style: normal;line-height: 44px;"><b>Data:  </b></label>
+          <input type="text" id="data" class="data" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" style="margin-top: 40px;">
+          <select name="from" id="from">
+            <option selected value="Byte">Byte</option>
+            <option value="Kilo">KiloByte</option>
+            <option value="Mega">MegaByte</option>
+            <option value="Giga">GigaByte</option>
+            <option value="Tera">TeraByte</option>
+          </select>
+          <label> to </label>
+          <select name="to" id="to">
+            <option value="Byte">Byte</option>
+            <option selected value="Kilo">KiloByte</option>
+            <option value="Mega">MegaByte</option>
+            <option value="Giga">GigaByte</option>
+            <option value="Tera">TeraByte</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" style="margin-top: 40px;">
+          <p style="font-size: 16px;line-height: 80px;font-weight: 300;font-style: normal;line-height: 44px;" class="center-block">
+            <b style="color:#d60b0b">Value:</b> <br/> <span id="value">0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@section Scripts
+{
+  <script type="text/javascript" src="~/js/bytecalculator.js"></script>
+}

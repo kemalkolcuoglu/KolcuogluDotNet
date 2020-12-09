@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="tr" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>@(ViewData["Title"]  != null ? "Kemal Kolcuoğlu | " + ViewData["Title"] : "Kemal Kolcuoğlu")</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="@(ViewData["Desc"] != null ? ViewData["Desc"] : "Kemal Kolcuoğlu Kişisel Web Sayfası")">
+  <meta name="keywords" content="@(ViewData["Keys"] != null ? ViewData["Keys"] : "devops, linux, python, csharp, aspdotnet, mvc, php, laravel, django, backend, bilgisayar, muhendisligi, istanbul, selcuk, universitesi")">
+  <meta name="author" content="Kemal Kolcuoğlu">
+  <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="~/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css">
+  <link href="~/css/main-red.min.css" rel="stylesheet" type="text/css">
+  @RenderSection("Styles", required: false)
+</head>
+<body>
+  <div id="page" class="page template-style-dark">
+    <header id="site_header" class="header mobile-menu-hide header-color-dark">
+      <div class="my-photo tilt-effect">
+        <img src="~/images/kk_logo.png" alt="Kemal Kolcuoğlu">
+      </div>
+      <div class="site-title-block">
+        <h2 class="site-title"><a href="~/">Kemal Kolcuoğlu</a></h2>
+      </div>
+      <div class="site-nav">
+        <ul id="nav" class="site-main-menu">
+          <li>
+            <a href="~/"><i class="fa fa-home"></i>  Anasayfa</a>
+          </li>
+          <li>
+            <a href="~/Ozgecmis"><i class="fa fa-id-card"></i>  Özgeçmiş</a>
+          </li>
+          <li>
+            <a href="~/Portfoy/Liste"><i class="fa fa-briefcase"></i>  Portföy</a>
+          </li>
+          <li>
+            <a href="~/Blog/Liste"><i class="fa fa-book"></i>  Blog</a>
+          </li>
+          <li>
+            <a href="~/Tools/List"><i class="fa fa-cubes"></i>  Araçlar</a>
+          </li>
+          <li>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="mobile-header mobile-visible">
+      <div class="mobile-logo-container">
+        <div class="mobile-site-title">Kemal Kolcuoğlu</div>
+      </div>
+      <a class="menu-toggle mobile-visible">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div id="main" class="site-main">
+      <div class="pt-wrapper" style="background-image: url(../images/main_bg.jpg);">
+        <div class="subpages">
+          @RenderBody()
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="~/js/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="~/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="~/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="~/js/main.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126413728-1"></script>
+  @RenderSection("Scripts", required: false)
+@{
+  <environment include="Production">
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-126413728-1');
+    </script>
+  </environment>
+}
+</body>
+</html>

@@ -1,0 +1,39 @@
+@{
+  ViewData["Title"] = "Son Blog Yazıları";
+  ViewData["Desc"] = "DevOps, Linux, Ubuntu, 'ASP.NET Core', Python, PHP";
+  List<Post> posts = ViewData["Posts"] as List<Post>;
+}
+<section class="pt-page pt-page-4" data-id="blog">
+  <div class="border-block-top-110"></div>
+  <div class="section-inner">
+    <div class="section-title-block">
+      <div class="section-title-wrapper">
+        <h1 class="section-title">Blog</h1>
+        <h5 class="section-description">Bütün Yazılar</h5>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-12 subpage-block">
+      <div class="block-title">
+        <h3>Son Yazılar</h3>
+      </div>
+      <div class="timeline">
+        @foreach (var item in posts)
+        {
+          <div class="timeline-event te-primary">
+            <h5 class="event-date">@(item.Date.ToString("dd MMMM yyyy"))</h5>
+            <div class="col-md-3 col-sm-12">
+              <a href="~/images/portfoy/apartmanyonetim.png" target="_blank"><img src="~/images/blog/@(item.File)/@(item.CoverImage)" style="width:90%;" alt="@(item.Title)"/></a>
+            </div>
+            <div class="col-md-9 col-sm-12">
+              <h4 class="event-name"><a href="~/Blog/@(item.Slug)">@item.Title</a></h4>
+              <span class="event-description">@item.Topic</span>
+              <p>
+                @item.Description
+              </p>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,37 @@
+@{
+  ViewData["Title"] = "Random Color Generator";
+  ViewData["Desc"] = "Random Color Generator, JavaScript Random Color Generator";
+}
+
+<section class="pt-page pt-page-5">
+  <div class="border-block-top-110"></div>
+  <div class="section-inner">
+    <div class="section-title-block">
+      <div class="section-title-wrapper">
+        <h1 class="section-title">Random Color Generator</h1>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-12 subpage-block">
+      <div class="row">
+        <div class="col-md-6">
+          <p style="font-size: 33px;line-height: 80px;letter-spacing: 0.217em;font-weight: 300;font-style: normal;line-height: 44px;" class="center-block">
+            Color: <span id="color" style="color:#FFFFFF">#FFFFFF</span>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="color-palette" class="center-block" readonly/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" style="margin-top: 40px;">
+          <button id="random-button" class="center-block">Click & Change</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@section Scripts
+{
+  <script type="text/javascript" src="~/js/randomcolorgenerator.js"></script>
+}

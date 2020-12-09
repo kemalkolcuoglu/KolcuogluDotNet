@@ -1,0 +1,35 @@
+@model KolcuogluNet.Models.Post
+@using Westwind.AspNetCore.Markdown
+@{
+  ViewData["Title"] = @Model.Title;
+  ViewData["Desc"] = @Model.SEODescription;
+}
+
+<section class="pt-page pt-page-5">
+  <div class="border-block-top-110"></div>
+  <div class="section-inner">
+    <div class="section-title-block">
+      <div class="section-title-wrapper">
+        <h1 class="section-title">@Model.Title</h1>
+        <h5 class="section-description">@Model.Date.ToString("dd MMMM yyyy")</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 subpage-block">
+        @{
+            var parsedHtml = await Markdown.ParseFromFileAsync($"~/post/{Model.File}.md");
+        }
+        @Html.Raw(parsedHtml)
+      </div>
+    </div>
+  </div>
+</section>
+
+@section Styles {
+  <link rel="stylesheet" href="~/css/vs2015-red.css">
+}
+
+@section Scripts {
+  <script src="~/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+}

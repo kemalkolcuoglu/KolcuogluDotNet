@@ -1,0 +1,40 @@
+@{
+  ViewData["Title"] = "Counter";
+  ViewData["Desc"] = "Number Counter, Little Javascript Code";
+}
+
+<section class="pt-page pt-page-5">
+  <div class="border-block-top-110"></div>
+  <div class="section-inner">
+    <div class="section-title-block">
+      <div class="section-title-wrapper">
+        <h1 class="section-title">Counter</h1>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-12 subpage-block">
+      <div class="row">
+        <div class="col-md-6">
+          <p style="font-size: 33px;line-height: 80px;letter-spacing: 0.217em;font-weight: 300;font-style: normal;line-height: 44px;" class="center-block">
+            <b>Value:</b> <span id="value" style="color:#FFFFFF">0</span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4" style="margin-top: 40px;">
+          <button id="decrease" class="center-block">Decrease</button>
+        </div>
+        <div class="col-md-4" style="margin-top: 40px;">
+          <button id="reset" class="center-block">Reset</button>
+        </div>
+        <div class="col-md-4" style="margin-top: 40px;">
+          <button id="increase" class="center-block">Increase</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@section Scripts
+{
+  <script type="text/javascript" src="~/js/counter.js"></script>
+}
