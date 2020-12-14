@@ -1,5 +1,7 @@
 # Kolcuoglu.Net
 
+![.NET Core](https://github.com/kemalkolcuoglu/KolcuogluDotNet/workflows/.NET%20Core/badge.svg?branch=master)
+
 This project is my personal website source code.
 
 ## Getting Started
