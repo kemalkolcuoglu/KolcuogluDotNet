@@ -1,5 +1,18 @@
 [
   {
+    "Title": "[Öğretici] Jekyll ile Static Site Generator Kavramı",
+    "Topic": "Static Site Generator",
+    "SEODescription": "Jekyll, Static Site Generator",
+    "Description": "Jekyll Ruby Programlama Dili ile geliştirmiş, Açık Kaynak bir Statik Site Oluşturucu'dur (Static Site Generator). Jekyll ile hızlıca web sitesi oluşturabilir ve yayınlayabilirsiniz.",
+    "Slug": "jekyll-static-site-generator-9",
+    "Date": "2020-01-11T01:45:00",
+    "File": "jekyll-static-site-generator",
+    "CoverImage": "jekyll-logo.png",
+    "Tags": [
+      "staticsitegenerator"
+    ]
+  },
+  {
     "Title": "Kolcuoglu.Net Artık Özgür!",
     "Topic": "Özgür Yazılım",
     "SEODescription": "Özgür Yazılım, Açık kaynak kodlu yazılım",

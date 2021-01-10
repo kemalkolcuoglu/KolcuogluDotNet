@@ -22,7 +22,7 @@
           <div class="timeline-event te-primary">
             <h5 class="event-date">@(item.Date.ToString("dd MMMM yyyy"))</h5>
             <div class="col-md-3 col-sm-12">
-              <a href="~/images/portfoy/apartmanyonetim.png" target="_blank"><img src="~/images/blog/@(item.File)/@(item.CoverImage)" style="width:90%;" alt="@(item.Title)"/></a>
+              <a href="~/Blog/@(item.Slug)"><img src="~/images/blog/@(item.File)/@(item.CoverImage)" style="width:90%;" alt="@(item.Title)"/></a>
             </div>
             <div class="col-md-9 col-sm-12">
               <h4 class="event-name"><a href="~/Blog/@(item.Slug)">@item.Title</a></h4>
