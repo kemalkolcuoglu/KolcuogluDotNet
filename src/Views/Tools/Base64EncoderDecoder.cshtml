@@ -1,0 +1,88 @@
+@{ ViewData["Title"] = "Base64 Encoder & Decoder";
+  ViewData["Desc"] = "Base64 Encoder & Decoder Converter"; }
+
+<section class="pt-page pt-page-5">
+  <div class="border-block-top-110"></div>
+  <div class="section-inner">
+    <div class="section-title-block">
+      <div class="section-title-wrapper">
+        <h1 class="section-title">Byte Calculator</h1>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-12 subpage-block">
+      <div class="row">
+        <div class="col-md-12" style="margin-top: 40px;">
+          <label style="color:#d60b0b;font-size: 16px;line-height: 80px;font-weight: 300;font-style: normal;line-height: 44px;"><b>Input:  </b></label>
+          @Html.TextArea("input", null, 10, 5, new { @class = "form-control " })
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6" style="margin-top: 40px;">
+          <button id="encode" class="center-block">Encode</button>
+        </div>
+        <div class="col-md-6" style="margin-top: 40px;">
+          <button id="decode" class="center-block">Decode</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" style="margin-top: 40px;">
+          <label style="color:#d60b0b;font-size: 16px;line-height: 80px;font-weight: 300;font-style: normal;line-height: 44px;"><b>Output:  </b></label>
+          @Html.TextArea("output", null, 10, 5, new { @class = "form-control " })
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@section Scripts
+{
+  <!-- Encoding -->
+  <script type="text/javascript">
+    $('#encode').click(function () {
+      var text = $('#input').val();
+      var output = $('#output');
+
+      if (text != '') {
+        $.ajax({
+          url: '@Url.Action("Base64Encoder", "Tools")',
+          type: 'POST',
+          data: JSON.stringify(text),
+          contentType: 'application/json; charset=utf-8',
+          success: function (data, textStatus, xhr) {
+            output.text(data);
+          },
+          error: function (xhr, textStatus, errorThrown) {
+            output.text('Error in Operation: ' + errorThrown);
+          }
+        });
+      } else {
+        output.text('Please enter a text to input section!');
+      }
+    });
+  </script>
+
+  <!-- Decoding -->
+  <script type="text/javascript">
+    $('#decode').click(function () {
+      var text = $('#input').val();
+      var output = $('#output');
+
+      if (text != '') {
+        $.ajax({
+          url: '@Url.Action("Base64Decoder", "Tools")',
+          type: 'POST',
+          data: JSON.stringify(text),
+          contentType: 'application/json; charset=utf-8',
+          success: function (data, textStatus, xhr) {
+            output.text(data);
+          },
+          error: function (xhr, textStatus, errorThrown) {
+            output.text('Error in Operation: ' + xhr.responseJSON.title);
+          }
+        });
+      } else {
+        output.text('Please enter a text to input section!');
+      }
+    });
+  </script>
+}
