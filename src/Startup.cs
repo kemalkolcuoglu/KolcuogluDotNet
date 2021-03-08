@@ -70,6 +70,9 @@ namespace KolcuogluNet
                     pattern: "wp-*.php/",
                     defaults: new { controller = "Home", action = "Wordpress" });
                 endpoints.MapControllerRoute(name: "Blog",
+                    pattern: "Blog/Liste",
+                    defaults: new { controller = "Blog", action = "Liste" });
+                endpoints.MapControllerRoute(name: "Blog",
                     pattern: "Blog/{*slug}",
                     defaults: new { controller = "Blog", action = "Yazi" });
                 endpoints.MapControllerRoute(

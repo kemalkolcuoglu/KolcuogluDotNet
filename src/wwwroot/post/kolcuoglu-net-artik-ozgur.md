@@ -14,7 +14,7 @@ Bundan sonraki geliştireceğim projelerde de bu felsefe ve ruhu koruyabilmek di
 
 **Gereksinimler**
 
-- [ASP.Net Core 3.1](https://dotnet.microsoft.com/)
+- [.Net 5 - ASP.Net Core](https://dotnet.microsoft.com/)
 
 **Hızlı Başlangıç**
 
